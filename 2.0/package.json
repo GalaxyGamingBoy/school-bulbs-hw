@@ -1,0 +1,22 @@
+{
+  "name": "bulbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "sass src/*.scss index.css",
+    "dev:css": "sass src/*.scss index.css -w",
+    "build:ts": "tsc",
+    "dev:ts": "tsc -w",
+    "build": "npm run build:css && npm run build:ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.75.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
+  }
+}

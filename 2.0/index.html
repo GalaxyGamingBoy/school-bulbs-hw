@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Bulbs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="game">
+        <img class="bulb" src="./assets/bulb-on.png" />
+        <button id="clicker">⚡</button>
+        <img class="bulb" src="./assets/bulb-on.png" />
+      </div>
+      <div class="stats">
+        <p class="stats-zaps">
+          Zaps: <strong id="stats-zaps-count">0</strong>⚡
+        </p>
+        <p class="stats-btr">
+          Battery: <strong id="stats-btr-count">0</strong>%🔋
+        </p>
+      </div>
+    </div>
+
+    <div class="shop-container">
+      <div class="shop">
+        <p>Try to keep the light turned on! Don't let the battery reach 0%</p>
+        <h1>Shop</h1>
+        <table class="shop table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Cost</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>More Zaps</td>
+              <td>Generates more zaps per click</td>
+              <td><strong id="shop-zaps-cost">0</strong>⚡</td>
+              <td><button class="shop buy" id="shop-zaps-buy">Buy!</button></td>
+            </tr>
+            <tr>
+              <td>Better Efficiency</td>
+              <td>Less battery waste per second</td>
+              <td><strong id="shop-btr-cost">0</strong>⚡</td>
+              <td><button class="shop buy" id="shop-btr-buy">Buy!</button></td>
+            </tr>
+            <tr>
+              <td>Better Power Generation</td>
+              <td>Refills more battery power, charges faster</td>
+              <td><strong id="shop-pwr-cost">0</strong>⚡</td>
+              <td><button class="shop buy" id="shop-pwr-buy">Buy!</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script defer src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.game {
+  display: flex;
+  align-content: center;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bulb {
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.stats-zaps, .stats-btr {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.shop-container {
+  display: flex;
+  justify-content: center;
+}
+
+.shop {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.shop .buy {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.shop .buy:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.shop .table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.shop .table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.shop .table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.shop .table th,
+.shop .table td {
+  padding: 12px 15px;
+}
+.shop .table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.shop .table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.bulb {
+  opacity: var(--battery-charge, 100);
+}
+
+#clicker {
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  font-size: 50px;
+  border-radius: 5rem;
+}
+#clicker:hover {
+  border-color: #ffc401;
+}
+
+/*# sourceMappingURL=index.css.map */

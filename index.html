@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb</title>
+  </head>
+  <body>
+    <div>
+      <img width="128" height="128" id="bulb-l" src="./bulb-on.png" />
+      <img width="128" height="128" id="bulb-r" src="./bulb-off.png" />
+    </div>
+    <div>
+      <button id="btn-l">Light Left</button>
+      <button id="btn-r">Light Right</button>
+    </div>
+  </body>
+
+  <script defer>
+    const btnL = document.getElementById("btn-l");
+    const btnR = document.getElementById("btn-r");
+    const bulbL = document.getElementById("bulb-l");
+    const bulbR = document.getElementById("bulb-r");
+
+    const bulbOn = "./bulb-on.png";
+    const bulbOff = "./bulb-off.png";
+
+    btnL.addEventListener("click", () => {
+      bulbL.src = bulbOn;
+      bulbR.src = bulbOff;
+    });
+
+    btnR.addEventListener("click", () => {
+      bulbL.src = bulbOff;
+      bulbR.src = bulbOn;
+    });
+  </script>
+</html>
